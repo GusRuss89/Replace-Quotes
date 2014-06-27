@@ -1,0 +1,74 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+a {
+	color: #c1ef93;
+}
+
+textarea.form-control {
+	height: 180px;
+}
+.btn-xs {
+	margin: 0.25em 0.5em;
+}
+.btn-primary {
+	background-color: #f27979;
+	border: none;
+}
+.btn-primary:hover,
+.btn-primary:active {
+	background-color: #c1ef93;
+	color: #111;
+}
+.jumbotron {
+	background: #c1ef93;
+	text-shadow: 1px 1px 0 rgba(255,255,255,0.6);
+	margin-bottom: 10px;
+}
+.jumbotron mark {
+	-webkit-box-shadow: 2px 2px 1px rgba(0,0,0,0.1);
+	   -moz-box-shadow: 2px 2px 1px rgba(0,0,0,0.1);
+	    	box-shadow: 2px 2px 1px rgba(0,0,0,0.1);
+}
+.toolbar-container {
+	margin-bottom: 5px;
+	text-align: right;
+}
+#bookmarklet {
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
+	position: relative;
+	top: 10px;
+}
+#bookmarklet:before {
+	content: "Drag me to your bookmars bar";
+	display: inline;
+}
+#bookmarklet span {
+	display: none;
+}
+
+mark {
+	display: inline-block;
+	margin: 0 1px;
+	padding: 0 0.25em;
+	text-shadow: 1px 1px 0 rgba(255,255,255,0.6);
+}
+mark.bad {
+	background-color: #f27979;
+}
+mark.good {
+	background-color: #c1ef93;
+}
+
+
+
+
+
+
+
+
+

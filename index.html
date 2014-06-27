@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Replace Smart Quotes and Dashes from Microsoft Word</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron">
+	<div class="container">
+		<h1>Replace <mark class="bad">Smart Quotes</mark> and <mark class="bad">Dashes</mark></h1>
+		<p>And some <mark class="bad">other stuff</mark> that messes up your html pages</p>
+	</div>
+</div>
+	
+<div class="container">
+
+	<div class="toolbar-container clearfix">
+		<a class="btn btn-primary btn-xs" href="" id="bookmarklet"><span>Replace Quotes</span></a>
+	</div>
+	<div class="form-group">
+		<label for="inputText">Paste your <mark class="bad">‘</mark>dirty<mark class="bad">’</mark> document contents here</label>
+		<textarea class="form-control" id="inputText" placeholder="“You’ve gotta be kiddin’ me!” – Angus Russell…"></textarea>
+	</div>
+
+	<div class="form-group">
+		<label>Options for replacement</label>
+		<div>
+			<label class="radio-inline">
+				<input id="use-characters" name="replace-with-options" type="radio" checked> Replace with simple characters
+			</label>
+			<label class="radio-inline">
+				<input id="use-html-entities" name="replace-with-options" type="radio"> Replace with HTML Entities
+			</label>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="outputText">Copy your <mark class="good">'</mark>clean<mark class="good">'</mark> contents from here</label>
+		<textarea class="form-control" id="outputText" placeholder=""></textarea>
+	</div>
+
+	<div class="form-group what-changed-group" style="display: none;">
+		<label>What changed?</label>
+		<div id="what-changed"></div>
+	</div>
+
+	<hr>
+
+	<footer>
+		<p>Built by <a href="http://angusrussell.me" target="_blank">Angus</a> | Based on the work of <a href="http://www.andornot.com/blog/post/Replace-MS-Word-special-characters-in-javascript-and-C.aspx" target="_blank">Peter Tyrrell</a></p>
+	</footer>
+</div> <!-- /container -->        
+
+<script src="js/vendor/jquery-1.11.0.min.js"></script>
+<script src="js/main.js"></script>
+	
+</body>
+</html>
